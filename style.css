@@ -1,0 +1,164 @@
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo img {
+    width: 8%;
+    height: auto;
+}
+.links {
+    display: flex;
+    gap: 20px;
+}
+.links a {
+    color: rgb(26, 24, 24);
+    font-size: larger;
+}
+.hobby{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    flex: 1;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(219, 206, 206);
+}
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.card:hover{
+    box-shadow: 0 10px 10px lightgray;
+}
+.gridcont {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 20px;
+}
+.gridhead {
+    grid-area: header;
+    text-align: center;
+}
+.sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.main {
+    grid-area: main;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.gridfooter {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.photo {
+    text-align: center;
+}
+.photo img {
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.photo p {
+    display: none;
+}
+.photo:hover p {
+    display: block;
+}
+.portfolio {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "projects sidebar"
+        "footer footer";
+    gap: 20px;
+}
+.porthead {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.portlinks {
+    display: flex;
+    gap: 20px;
+}
+.n{
+    display: flex;
+    gap: 20px;
+}
+.n a {
+    color: rgb(37, 28, 28);
+    font-size: 20px;
+}
+.portprojects {
+    grid-area: projects;
+}
+.portsidebar {
+    grid-area: sidebar;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(246, 209, 209);
+}
+.projectsbox {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.projcard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(219, 206, 206);
+}
+.projcard h3 {
+    width: 180px;
+}
+.projcard p {
+    flex: 1;
+}
+.portfooter {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(204, 226, 204);
+}
